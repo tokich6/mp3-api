@@ -1,20 +1,20 @@
 # mp3-api
 
 ├── src/
-│   ├── server.ts           # Express server setup
-|   ├── app.ts              # Express app setup
-│   ├── routes/
-│   │   └── upload.ts       # /file-upload endpoint
-│   ├── services/
-│   │   └── mp3Parser.ts    # Core MP3 parsing logic
+│   ├── interfaces/
+│   │   └── index.ts
 │   ├── middleware/
-│   │   └── errorHandler.ts # Error handling middleware
-│   └── interfaces/
-│       └── index.ts        # TypeScript type definitions
+│   │   └── errorHandler.ts
+│   ├── routes/
+│   │   └── upload.ts
+│   ├── services/
+│   │   └── mp3Parser.ts
+│   ├── app.ts
+│   └── server.ts
 ├── tests/
-│   └── mp3Parser.test.ts   # Unit tests
-├── package.json
-├── tsconfig.json
+│   └── mp3Parser.test.ts
 ├── .eslintrc.json
 ├── .prettierrc
-└── README.md
+├── package.json
+├── README.md
+└── tsconfig.json
